@@ -273,6 +273,64 @@ ul {
     color: #1A1C19;
 }
 
+/*--------------------Partners-----------------*/
+
+.partners{
+    margin-top: 100px;
+    background: #FDFDFD;
+}
+
+.content-partners{
+    padding: 85px 0;
+}
+
+.partners-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    color: #1A1C19;
+    margin-bottom: 20px;
+}
+
+.partners-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #808080;
+    max-width: 490px;
+    margin-bottom: 40px;
+}
+
+.partners-line{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.certificate{
+    margin-right: 20px;
+}
+
+.partners-logos{
+    width: 100%;
+}
+
+.slide{
+    background-color: white;
+    border: 1px solid #EFEFEF;
+    height: 292px;
+    width: 100%;
+    display: flex;
+}
+
+.partners-logo{
+    max-width: 60px;
+    margin: auto;
+}
+
+
 
 /*------------------FOOTER-------------------*/
 
