@@ -86,7 +86,7 @@ ul {
 
 .main {
     background-image: url(../images/img/mainBg.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-position-y: 86px;
     height: 100vh;
@@ -133,6 +133,93 @@ ul {
     max-width: 185px;
 }
 
+/*-----------APP-----------------*/
+
+.app{
+    margin-top: 100px;
+}
+
+.content-app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-app{
+    width: 488px;
+    height: 700px;
+    background: #FDFDFD;
+    border-radius: 6px;
+    padding: 60px 70px 70px;
+}
+
+.phone-image{
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.phone-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #1A1C19;
+    margin-bottom: 15px;
+}
+
+.phone-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #808080;
+    margin-bottom: 30px;
+}
+
+.phone-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.phone-link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FE0001;
+}
+
+.right-app{
+    max-width: 360px;
+}
+
+.block-app:first-child{
+    margin-bottom: 70px;
+}
+
+.block-icon{
+    margin-bottom: 30px;
+}
+
+.block-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 23px;
+    color: #1A1C19;
+}
+
+.block-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #808080;
+}
 
 
 /*------------------FOOTER-------------------*/

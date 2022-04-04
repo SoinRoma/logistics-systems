@@ -2,14 +2,14 @@
 
     .main {
         background-image: url(../images/img/mainBg2.png);
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-position-y: 86px;
         background-repeat: no-repeat;
     }
 
     .mainBlock{
-        margin-top: 25%;
+        margin-top: 32vh;
         max-width: 354px;
     }
 
@@ -157,7 +157,7 @@
 
     .main {
         background-image: url(../images/img/mainBg3.png);
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-position-y: 86px;
         height: 100vh;
@@ -166,7 +166,6 @@
 
     .mainBlock{
         text-align: center;
-        margin-top: 45%;
         max-width: 354px;
     }
 
