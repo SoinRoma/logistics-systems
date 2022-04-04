@@ -1,0 +1,105 @@
+@media (max-width: 716px) {
+
+    .header-links, .header-phone {
+        display: none;
+    }
+
+    .overlay {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 12;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        text-align: center;
+    }
+
+    .right-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 70%;
+        border-radius: 50px 0 0 50px;
+        height: 100%;
+        background-color: #1A1C19;
+        z-index: 13;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        color: white;
+    }
+
+    .header-close-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+
+    .close-menu {
+        opacity: 0;
+        position: fixed;
+        right: 12%;
+        top: 3.5%;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transform: translateX(300%);
+        transition: transform 0.2s;
+        transition-delay: 0.4s;
+    }
+
+    .list-right-links{
+        padding: 0;
+        text-align: start;
+        margin-bottom: 40px;
+    }
+
+    .list-right-link{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 50px;
+        color: #FFFFFF;
+        padding: 0;
+        text-align: start;
+    }
+
+    .header-phone-right-text, .header-mail-right-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    .is-active {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

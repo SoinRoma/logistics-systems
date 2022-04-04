@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*--------------HEADER--------------*/
+
+.header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.logo{
+    max-width: 70px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.list-links{
+    display: flex;
+}
+
+.list-item{
+    margin-right: 25px;
+}
+
+.list-link{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #1A1C19;
+}
+
+.header-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-phone-icon, .header-menu-icon {
+    margin-right: 15px;
+}
+
+.header-phone-text, .header-menu-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1A1C19;
+}
+
+.burger-menu, .right-menu, .overlay{
+    display: none;
+}
