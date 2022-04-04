@@ -7,9 +7,11 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: auto;
+    padding-right: 35px;
+    padding-left: 50px;
 }
 
-a, a:hover{
+a, a:hover {
     text-decoration: none;
 }
 
@@ -24,29 +26,29 @@ ul {
     position: fixed;
     width: 100%;
     z-index: 10;
-
+    top: 0;
 }
 
-.logo{
+.logo {
     max-width: 70px;
 }
 
-.nav {
+.header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 0 10px;
 }
 
-.list-links{
+.list-links {
     display: flex;
 }
 
-.list-item{
+.list-item {
     margin-right: 25px;
 }
 
-.list-link{
+.list-link {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -72,8 +74,124 @@ ul {
     font-size: 15px;
     line-height: 22px;
     color: #1A1C19;
+    margin-bottom: 0;
 }
 
-.burger-menu, .right-menu, .overlay{
+.burger-menu, .right-menu, .overlay {
     display: none;
+}
+
+
+/*--------------MAIN----------------*/
+
+.main {
+    background-image: url(../images/img/mainBg.png);
+    background-size: contain;
+    background-position: center;
+    background-position-y: 86px;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.mainBlock {
+    margin-top: 25vh;
+}
+
+.mainTitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    max-width: 496px;
+    color: #1A1C19;
+}
+
+.mainDescription{
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 300px;
+    color: #808080;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.mainButton {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background: #FF0000;
+    border-radius: 5px;
+    padding: 18px 42px;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    max-width: 185px;
+}
+
+
+
+/*------------------FOOTER-------------------*/
+
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.footer-logo{
+    max-width: 70px;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-phone, .footer-mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-phone{
+    margin-right: 70px;
+}
+
+.footer-phone-icon, .footer-mail-icon {
+    margin-right: 15px;
+}
+
+.footer-phone-text, .footer-mail-text{
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1A1C19;
+}
+
+.powered {
+    margin: 0;
+    color: #1A1C19;
+}
+
+.altek {
+    margin-left: 10px;
+}
+
+.rights{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #9F9F9F;
 }
