@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="js/carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/popup/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/response.css">
 </head>
@@ -289,7 +290,7 @@
                     We will gladly provide you with a competitive quote for our services. Please take a moment to
                     complete and submit the form below, and we will promptly respond
                 </p>
-                <button class="requestButton">
+                <button href="#requestModal" class="requestButton requestModal" data-effect="mfp-zoom-in">
                     Request a quote
                 </button>
             </div>
@@ -348,11 +349,41 @@
     </p>
 </footer>
 
+<div id="requestModal" class="white-popup white-popup__settings mfp-with-anim mfp-hide">
+    <div class="popup-main">
+        <div class="contactLeftModal">
+            <h2 class="contactTitle">Request a quote</h2>
+            <p class="contactText">
+                Please let us know the nature of your inquiry
+                and we will get back to you shortly
+            </p>
+            <form action="#" class="CallBackForm" id="CallBackCreateForm">
+                <div class="group">
+                    <input type="email" id="mailModal" required autocomplete="off">
+                    <label for="mailModal">Email</label>
+                </div>
+                <button class="contactButtonModal" id="submitBtn">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+        <div class="contactLeftModalSuccess" hidden>
+            <h2 class="contactTitle text-center">Sent <br> successfully!</h2>
+            <img class="d-flex m-auto" src="{% static 'images/svg/success.svg' %}" alt="success">
+            <button class="contactButtonModal mt-5" id="doneBtn">
+                Done
+            </button>
+        </div>
+    </div>
+</div>
+
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap/popper.min.js"></script>
 <script src="js/bootstrap/bootstrap.js"></script>
 <script src="js/carousel/owl.carousel.min.js"></script>
 <script src="js/carousel/main.js"></script>
+<script src="js/popup/jquery.magnific-popup.min.js"></script>
 <script src="js/burger/main.js"></script>
 <script src="js/main.js"></script>
 </body>

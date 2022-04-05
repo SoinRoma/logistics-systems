@@ -29,3 +29,21 @@ $("#menu-right-header").on("click", "a", function (event) {
     let top = $(id).offset().top - 100;
     $('body,html').animate({scrollTop: top}, 1000);
 });
+
+
+// Инициализация для модальных окон
+$(document).ready(function () {
+    $('.requestModal').magnificPopup({
+        removalDelay: 500,
+        callbacks: {
+            beforeOpen: function () {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        },
+        midClick: true
+    });
+
+    $(".closeBtn").click(function () {
+        $.magnificPopup.close();
+    });
+});
