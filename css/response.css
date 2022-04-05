@@ -4,12 +4,13 @@
         background-image: url(../images/img/mainBg2.png);
         background-size: cover;
         background-position: center;
-        background-position-y: 86px;
+        background-position-y: 36px;
         background-repeat: no-repeat;
+        height: 78vh;
     }
 
     .mainBlock{
-        margin-top: 32vh;
+        margin-top: 25vh;
         max-width: 354px;
     }
 
@@ -127,6 +128,19 @@
 }
 
 @media (max-width: 830px) {
+
+    .main {
+        background-image: url(../images/img/mainBg2.png);
+        background-size: cover;
+        background-position: center;
+        background-position-y: 21px;
+        background-repeat: no-repeat;
+        height: 65vh;
+    }
+
+    .mainBlock {
+        margin-top: 22vh;
+    }
 
     .mainBlock{
         max-width: 254px;
@@ -347,23 +361,25 @@
         background-image: url(../images/img/mainBg3.png);
         background-size: cover;
         background-position: center;
-        background-position-y: 86px;
-        height: 100vh;
+        background-position-y: 2px;
+        height: 77vh;
         background-repeat: no-repeat;
     }
 
     .mainBlock{
         text-align: center;
         max-width: 354px;
+        margin-top: 23vh;
     }
 
     .mainTitle{
-        font-size: 40px;
+        font-size: 30px;
         line-height: 45px;
     }
 
     .mainDescription{
-        font-size: 15px;
+        font-size: 14px;
+        color: white;
     }
 
     .mainButton {
@@ -400,6 +416,15 @@
 }
 
 @media (max-width: 445px) {
+
+    .main {
+        background-image: url(../images/img/mainBg3.png);
+        background-size: cover;
+        background-position: center;
+        background-position-y: 2px;
+        height: 69vh;
+        background-repeat: no-repeat;
+    }
 
     label {
         font-size: 14px;

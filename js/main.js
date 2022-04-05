@@ -38,8 +38,15 @@ $(document).ready(function () {
         callbacks: {
             beforeOpen: function () {
                 this.st.mainClass = this.st.el.attr('data-effect');
-            }
+            },
+            open: function() {
+                $('body').css('overflow', 'hidden');
+            },
+            close: function() {
+                $('body').css('overflow', 'auto');
+            },
         },
+        scroll: false,
         midClick: true
     });
 
