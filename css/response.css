@@ -33,6 +33,55 @@
 }
 
 @media (max-width: 990px) {
+
+    .content-app {
+        flex-direction: column-reverse;
+    }
+
+    .right-app {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block-app:first-child {
+        margin-right: 80px;
+    }
+
+    .left-app {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        padding: 30px 20px 40px;
+    }
+
+    .phone-title {
+        text-align: start;
+    }
+
+    .phone-text {
+        text-align: start;
+    }
+
+    .phone-links {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .phone-link {
+        margin-right: 20px;
+    }
+
+    .phone-image {
+        margin-right: 50px;
+    }
+
+    .phone-block-text{
+        width: 75%;
+    }
+
     .partners-line {
         display: flex;
         justify-content: space-between;
@@ -208,6 +257,47 @@
     .faq-title {
         font-size: 30px;
     }
+
+    .right-app {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .left-app {
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        padding: 30px 20px 40px;
+    }
+
+    .phone-image {
+        margin: auto;
+    }
+
+    .phone-title {
+        text-align: center;
+    }
+
+    .phone-text {
+        text-align: center;
+    }
+
+    .phone-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-link {
+        margin-right: 20px;
+    }
+
+
+    .phone-block-text{
+        width: 100%;
+    }
 }
 
 @media (max-width: 560px) {
@@ -244,10 +334,47 @@
         max-width: 100%;
         margin-right: 0;
     }
+
+    .left-app {
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: 650px;
+        padding: 30px 20px 40px;
+    }
 }
 
 
 @media (max-width: 378px) {
+
+    .left-app {
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: 720px;
+        padding: 30px 20px 40px;
+    }
+
+    .phone-title {
+        font-size: 18px;
+    }
+
+    .phone-text {
+        font-size: 14px;
+    }
+
+    .phone-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-link {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
     .faq-request {
         padding: 36px 16px 36px 20px;
     }
