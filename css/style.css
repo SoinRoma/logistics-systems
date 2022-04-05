@@ -509,7 +509,7 @@ ul {
     background-image: url(../images/img/contactBg.png);
     background-size: cover;
     background-position: center;
-    background-position-y: 86px;
+    background-position-y: 0;
     height: 100vh;
     background-repeat: no-repeat;
 }
