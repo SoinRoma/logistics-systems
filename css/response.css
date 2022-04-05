@@ -30,6 +30,28 @@
     .faq-request {
         padding: 36px 70px 36px 20px;
     }
+    .content-about {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-about {
+        max-width: 100%;
+    }
+
+    .right-about{
+        max-width: 100%;
+    }
+
+    .about-image1{
+        display: none;
+    }
+
+    .about-image2{
+        display: block;
+        width: 100%;
+    }
 }
 
 @media (max-width: 990px) {
@@ -254,7 +276,7 @@
 }
 
 @media (max-width: 655px) {
-    .faq-title {
+    .faq-title, .about-title, .partners-title {
         font-size: 30px;
     }
 
@@ -342,8 +364,16 @@
         height: 650px;
         padding: 30px 20px 40px;
     }
-}
 
+    .about-image2{
+        display: none;
+    }
+
+    .about-image3{
+        display: block;
+        width: 100%;
+    }
+}
 
 @media (max-width: 378px) {
 

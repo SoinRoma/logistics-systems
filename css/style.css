@@ -289,6 +289,10 @@ ul {
     color: #1A1C19;
 }
 
+.about-image2, .about-image3{
+    display: none;
+}
+
 /*--------------------Partners-----------------*/
 
 .partners{
