@@ -381,30 +381,26 @@ ul {
 
 .accordion button .icon {
     display: inline-block;
-    position: absolute;
-    top: 24px;
-    right: 10px;
     width: 22px;
     height: 22px;
+    position: relative;
 }
 .accordion button .icon::before {
     display: block;
-    position: absolute;
     content: '';
-    top: 9px;
-    left: 5px;
     width: 16px;
+    top: 6px;
     height: 2px;
+    position: absolute;
     background: currentColor;
 }
 .accordion button .icon::after {
     display: block;
-    position: absolute;
     content: '';
-    top: 3px;
-    left: 12px;
     width: 2px;
     height: 15px;
+    left: 7px;
+    position: absolute;
     background: currentColor;
 }
 
@@ -413,7 +409,7 @@ ul {
 }
 .accordion button[aria-expanded='true'] + .accordion-content {
     opacity: 1;
-    max-height: 9em;
+    max-height: 10%;
     transition: all 200ms linear;
     will-change: opacity, max-height;
 }
@@ -436,6 +432,7 @@ ul {
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
+    margin-right: 20px;
     color: #808080;
 }
 

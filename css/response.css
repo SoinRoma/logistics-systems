@@ -22,6 +22,16 @@
 
 }
 
+@media (max-width: 1090px) {
+    .faq-line {
+        display: block;
+    }
+
+    .faq-request {
+        padding: 36px 70px 36px 20px;
+    }
+}
+
 @media (max-width: 830px) {
 
     .mainBlock{
@@ -69,7 +79,6 @@
     }
 
 }
-
 
 @media (max-width: 716px) {
 
@@ -178,6 +187,11 @@
     }
 }
 
+@media (max-width: 655px) {
+    .faq-title {
+        font-size: 30px;
+    }
+}
 
 @media (max-width: 560px) {
 
@@ -207,5 +221,25 @@
     .mainButton {
         font-size: 14px;
         padding: 18px 42px;
+    }
+}
+
+
+@media (max-width: 378px) {
+    .faq-request {
+        padding: 36px 16px 36px 20px;
+    }
+
+    .request-title {
+        font-size: 16px;
+    }
+
+    .request-text {
+        font-size: 13px;
+    }
+
+    .requestButton {
+        font-size: 13px;
+        padding: 13px 15px;
     }
 }
