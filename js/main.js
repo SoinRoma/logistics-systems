@@ -1,5 +1,6 @@
 const items = document.querySelectorAll(".accordion button");
 
+// Аккордион - FAQ
 function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
 
@@ -13,3 +14,18 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+// Якорные ссылки
+$("#menu-header").on("click", "a", function (event) {
+    event.preventDefault();
+    let id = $(this).attr('href');
+    let top = $(id).offset().top - 100;
+    $('body,html').animate({scrollTop: top}, 1000);
+});
+
+$("#menu-right-header").on("click", "a", function (event) {
+    event.preventDefault();
+    let id = $(this).attr('href');
+    let top = $(id).offset().top - 100;
+    $('body,html').animate({scrollTop: top}, 1000);
+});
