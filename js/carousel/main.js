@@ -5,13 +5,16 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            640: {
+            490: {
                 items: 2
             },
-            795: {
+            670: {
+                items: 4
+            },
+            990: {
                 items: 3
             },
-            1000: {
+            1300: {
                 items: 4
             }
         }
