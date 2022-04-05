@@ -511,7 +511,7 @@ ul {
     background-size: cover;
     background-position: center;
     background-position-y: 0;
-    height: 100vh;
+    height: 110vh;
     background-repeat: no-repeat;
     border-radius: 50px 50px 0 0;
 }
@@ -519,7 +519,7 @@ ul {
 .contact-form {
     background-color: white;
     position: absolute;
-    top: 200px;
+    top: 115px;
     padding: 60px;
     border-radius: 6px;
 }

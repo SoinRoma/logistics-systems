@@ -6,7 +6,7 @@
         background-position: center;
         background-position-y: 36px;
         background-repeat: no-repeat;
-        height: 78vh;
+        height: 88vh;
     }
 
     .mainBlock{
@@ -59,7 +59,7 @@
 
     .contact{
         background-image: url(../images/img/contactBg2.png);
-        height: 90vh;
+        height: 110vh;
     }
 
     .content-app {
@@ -135,7 +135,7 @@
         background-position: center;
         background-position-y: 21px;
         background-repeat: no-repeat;
-        height: 65vh;
+        height: 77vh;
     }
 
     .mainBlock {
@@ -306,6 +306,10 @@
     .group input {
         width: 300px;
     }
+
+    .CallBackForm .group input {
+        width: 250px;
+    }
 }
 
 @media (max-width: 655px) {
@@ -352,6 +356,14 @@
 
     .phone-block-text{
         width: 100%;
+    }
+
+    .white-popup {
+        padding: 40px 20px 50px;
+    }
+
+    .CallBackForm .group input {
+        width: 200px;
     }
 }
 
@@ -411,7 +423,7 @@
 
     .contact{
         background-image: url(../images/img/contactBg3.png);
-        height: 85vh;
+        height: 110vh;
     }
 }
 
@@ -422,7 +434,7 @@
         background-size: cover;
         background-position: center;
         background-position-y: 2px;
-        height: 69vh;
+        height: 78vh;
         background-repeat: no-repeat;
     }
 
