@@ -456,6 +456,14 @@
 
 @media (max-width: 378px) {
 
+    .list-right-link {
+        font-size: 20px;
+    }
+
+    .header-phone-right-text, .header-mail-right-text {
+        font-size: 10px;
+    }
+
     .left-app {
         display: block;
         align-items: center;
