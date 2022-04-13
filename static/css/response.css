@@ -392,6 +392,7 @@
     .mainDescription{
         font-size: 14px;
         color: white;
+        margin: 20px auto 50px;
     }
 
     .mainButton {
