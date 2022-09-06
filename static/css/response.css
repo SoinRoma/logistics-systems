@@ -1,7 +1,7 @@
 @media (max-width: 1210px) {
 
     .main {
-        background-image: url(../images/img/mainBg2.png);
+        background-image: url(../images/img/mainBg2.webp);
         background-size: cover;
         background-position: center;
         background-position-y: 36px;
@@ -58,7 +58,7 @@
 @media (max-width: 990px) {
 
     .contact{
-        background-image: url(../images/img/contactBg2.png);
+        background-image: url(../images/img/contactBg2.webp);
         height: 110vh;
     }
 
@@ -130,7 +130,7 @@
 @media (max-width: 830px) {
 
     .main {
-        background-image: url(../images/img/mainBg2.png);
+        background-image: url(../images/img/mainBg2.webp);
         background-size: cover;
         background-position: center;
         background-position-y: 21px;
@@ -370,7 +370,7 @@
 @media (max-width: 560px) {
 
     .main {
-        background-image: url(../images/img/mainBg3.png);
+        background-image: url(../images/img/mainBg3.webp);
         background-size: cover;
         background-position: center;
         background-position-y: 2px;
@@ -423,7 +423,7 @@
     }
 
     .contact{
-        background-image: url(../images/img/contactBg3.png);
+        background-image: url(../images/img/contactBg3.webp);
         height: 110vh;
     }
 }
@@ -431,7 +431,7 @@
 @media (max-width: 445px) {
 
     .main {
-        background-image: url(../images/img/mainBg3.png);
+        background-image: url(../images/img/mainBg3.webp);
         background-size: cover;
         background-position: center;
         background-position-y: 2px;
