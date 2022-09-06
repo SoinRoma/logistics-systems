@@ -9,10 +9,11 @@
     <title>Logistics Systems</title>
     <link rel="icon" href="{% static 'images/logos/favicon.svg' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'js/carousel/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'js/popup/magnific-popup.css' %}">
-    <link rel="stylesheet" href="{% static 'js/toastr/toastr.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/carousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/popup/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/toastr/toastr.min.css' %}">
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4">
     <link rel="stylesheet" href="{% static 'css/response.css' %}?v=4">
 
@@ -375,128 +376,128 @@
     </div>
 </div>
 
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap/bootstrap.js' %}"></script>
-<script src="{% static 'js/carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'plugins/jquery/jquery.js' %}"></script>
+<script src="{% static 'plugins/bootstrap/popper.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap/bootstrap.js' %}"></script>
+<script src="{% static 'plugins/carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'plugins/popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'plugins/inputmask/input.mask.js' %}"></script>
+<script src="{% static 'plugins/toastr/toastr.min.js' %}"></script>
+
 <script src="{% static 'js/carousel/main.js' %}"></script>
-<script src="{% static 'js/popup/jquery.magnific-popup.min.js' %}"></script>
 <script src="{% static 'js/burger/main.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
-<script src="{% static 'js/inputmask/input.mask.js' %}"></script>
-<script src="{% static 'js/toastr/toastr.js' %}"></script>
 
 <script>
 
-   $(function () {
-      $("#phone").inputmask({
-         "mask": "+1 (ddd) ddd-dddd"
-      });
 
-   });
-
-   $("#contactForm").submit(function (event) {
-      event.preventDefault();
-      let requestData = new FormData();
-      requestData.append('name', $('#name').val());
-      requestData.append('phone', $('#phone').val());
-      requestData.append('question', $('#message').val());
-
-      const submitBtn = document.getElementById('submitBtn');
-      submitBtn.disabled = true;
+    $("#phone").inputmask({
+        "mask": "+1 (ddd) ddd-dddd"
+    });
 
 
-      let url = "{% url 'api:create_contact_us' %}";
-      $.ajax({
-         headers: {"X-CSRFToken": "{{csrf_token}}"},
-         url: url,
-         processData: false,
-         contentType: false,
-         method: 'POST',
-         data: requestData,
-         success: function (data) {
-            toastr.success(
-               'YOUR REQUEST HAS BEEN\n' +
-               'SENT SUCCESSFULLY!',
-               'Success',
-               {
-                  positionClass: "toast-top-center",
-                  timeOut: 2000,
-                  fadeOut: 1000,
-               }
-            );
+    $("#contactForm").submit(function (event) {
+        event.preventDefault();
+        let requestData = new FormData();
+        requestData.append('name', $('#name').val());
+        requestData.append('phone', $('#phone').val());
+        requestData.append('question', $('#message').val());
 
-            $('#contactForm')[0].reset();
-            submitBtn.disabled = false;
-
-         },
-         error: function (data) {
-            toastr.error(
-               data.responseText,
-               'Error',
-               {
-                  positionClass: "toast-top-center",
-                  timeOut: 2000,
-                  fadeOut: 1000,
-               }
-            );
-            submitBtn.disabled = false;
-         }
-      });
-
-   });
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.disabled = true;
 
 
-   $("#CallBackCreateForm").submit(function (event) {
+        let url = "{% url 'api:create_contact_us' %}";
+        $.ajax({
+            headers: {"X-CSRFToken": "{{csrf_token}}"},
+            url: url,
+            processData: false,
+            contentType: false,
+            method: 'POST',
+            data: requestData,
+            success: function (data) {
+                toastr.success(
+                    'YOUR REQUEST HAS BEEN\n' +
+                    'SENT SUCCESSFULLY!',
+                    'Success',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 1000,
+                    }
+                );
 
-      event.preventDefault();
-      let requestData = new FormData();
-      requestData.append('email', $('#mailModal').val());
-      const submitBtn = document.getElementById('submitBtn');
-      submitBtn.disabled = true;
+                $('#contactForm')[0].reset();
+                submitBtn.disabled = false;
 
+            },
+            error: function (data) {
+                toastr.error(
+                    data.responseText,
+                    'Error',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 1000,
+                    }
+                );
+                submitBtn.disabled = false;
+            }
+        });
 
-      let url = "{% url 'api:create_email' %}";
-      $.ajax({
-         headers: {"X-CSRFToken": "{{csrf_token}}"},
-         url: url,
-         processData: false,
-         contentType: false,
-         method: 'POST',
-         data: requestData,
-         success: function (data) {
-            toastr.success(
-               'YOUR REQUEST HAS BEEN\n' +
-               'SENT SUCCESSFULLY!',
-               'Success',
-               {
-                  positionClass: "toast-top-center",
-                  timeOut: 2000,
-                  fadeOut: 1000,
-               }
-            );
-
-            $('#CallBackCreateForm')[0].reset();
-            submitBtn.disabled = false;
-
-         },
-         error: function (data) {
-            toastr.error(
-               data.responseText,
-               'Error',
-               {
-                  positionClass: "toast-top-center",
-                  timeOut: 2000,
-                  fadeOut: 1000,
-               }
-            );
-            submitBtn.disabled = false;
-         }
+    });
 
 
-      });
+    $("#CallBackCreateForm").submit(function (event) {
 
-   });
+        event.preventDefault();
+        let requestData = new FormData();
+        requestData.append('email', $('#mailModal').val());
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.disabled = true;
+
+
+        let url = "{% url 'api:create_email' %}";
+        $.ajax({
+            headers: {"X-CSRFToken": "{{csrf_token}}"},
+            url: url,
+            processData: false,
+            contentType: false,
+            method: 'POST',
+            data: requestData,
+            success: function (data) {
+                toastr.success(
+                    'YOUR REQUEST HAS BEEN\n' +
+                    'SENT SUCCESSFULLY!',
+                    'Success',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 1000,
+                    }
+                );
+
+                $('#CallBackCreateForm')[0].reset();
+                submitBtn.disabled = false;
+
+            },
+            error: function (data) {
+                toastr.error(
+                    data.responseText,
+                    'Error',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 1000,
+                    }
+                );
+                submitBtn.disabled = false;
+            }
+
+
+        });
+
+    });
 
 </script>
 </body>
