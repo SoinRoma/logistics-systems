@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="{% static 'js/carousel/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'js/popup/magnific-popup.css' %}">
     <link rel="stylesheet" href="{% static 'js/toastr/toastr.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=3">
-    <link rel="stylesheet" href="{% static 'css/response.css' %}?v=3">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'css/response.css' %}?v=4">
 
 </head>
 <body>
@@ -23,7 +23,7 @@
     <header class="header">
         <div class="container">
             <nav class="header-nav">
-                <a href="index.html" class="logo-link">
+                <a href="/" class="logo-link">
                     <img loading="lazy" src="{% static 'images/logos/logo.svg' %}" alt="logo" class="logo">
                 </a>
                 <div class="header-links" id="menu-header">
@@ -350,7 +350,7 @@
     </div>
     <hr style="border: 1px solid #C4C4C4;">
     <p class="rights">
-        © 2021 All Rights Reserved. LOGISTIC SYSTEM
+        © {% now "Y" %} All Rights Reserved. LOGISTIC SYSTEM
     </p>
 </footer>
 
